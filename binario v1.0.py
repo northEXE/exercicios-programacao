@@ -3,7 +3,8 @@ valorInserido = int(valorInserido)
 binario = []
 
 if(valorInserido == 0 or valorInserido == 1):
-    print("000000", valorInserido)
+    binario = [0]*6
+    binario.append(int(valorInserido))
 else:
     if(64 <= valorInserido):
         valorInserido = int(valorInserido) - 64
@@ -47,4 +48,4 @@ else:
     else:
         binario.append(0)
         
-    print(binario)
+print(binario)
